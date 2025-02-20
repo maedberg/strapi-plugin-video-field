@@ -153,6 +153,15 @@ const VideoInput = ({ attribute, name, onChange, value, intlLabel, intlDescripti
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         />
                     )}
+                    {provider === 'scene7' && (
+                        <iframe
+                            src={providerUid}
+                            frameBorder="0"
+                            height={200}
+                            allowFullScreen
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        />
+                    )}
                 </Flex>
             )}
         </Box>

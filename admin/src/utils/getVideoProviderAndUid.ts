@@ -27,6 +27,13 @@ const getVideoProviderAndUid = (url: string) => {
             providerUid: url,
         };
     }
+
+    if (url.includes("scene7")) {
+        return {
+            provider: "scene7",
+            providerUid: url,
+        };
+    }
 };
 
 export { getVideoProviderAndUid };
